@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サイトネーム</title>
+    <meta name="description" content="説明文を入力">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="_css/styles.css">
+    <script src="_js/jquery-3.1.0.min.js"></script>
+    <script src="newentry.js"></script>
+<script>
+$(function() {
+    $('.entry_date').newEntry({
+        keepDay: 4,
+        content: 'new entry',
+        element: '<span>',
+        class: 'new',
+        inset: true,
+        after: true
+    });
+});
+</script>
+</head>
+
+<body>
+
+<p class="entry_date" data-date="2016-09-09">2016-09-09</p>
+<p class="entry_date" data-date="2016-09-08">2016-09-08</p>
+<p class="entry_date" data-date="2016-09-07">2016-09-07</p>
+<p class="entry_date" data-date="2016-09-06">2016-09-06</p>
+<p class="entry_date" data-date="2016-09-05">2016-09-05</p>
+<p class="entry_date" data-date="2016-09-04">2016-09-04</p>
+<p class="entry_date" data-date="2016-09-03">2016-09-03</p>
+<p class="entry_date" data-date="2016-09-02">2016-09-02</p>
+<p class="entry_date" data-date="2016-09-01">2016-09-01</p>
+
+</body>
+</html>
